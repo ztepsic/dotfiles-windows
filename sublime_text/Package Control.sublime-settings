@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"EncodingHelper",
+		"Indent XML",
+		"LESS",
+		"LineEndings",
+		"Package Control",
+		"scriptcs",
+		"SublimeREPL"
+	]
+}

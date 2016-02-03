@@ -1,0 +1,4 @@
+[
+	{ "keys": ["ctrl+k", "ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+k", "ctrl+u"], "command": "toggle_comment", "args": { "block": true } }
+]
