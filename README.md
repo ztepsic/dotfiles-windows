@@ -1,2 +1,2 @@
-devConfig
+Dotfiles for Windows
 =========
