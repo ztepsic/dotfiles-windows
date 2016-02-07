@@ -11,21 +11,21 @@ setlocal enabledelayedexpansion
 :: Hard Link - A hard link directly points to the file, and acts to the operating system as if it is the file itself. You’ll want to use this option the majority of the time if you are trying to fake an application’s directory.
 :: Soft Link - A soft link is essentially a shortcut to a file or folder – if you are using Windows explorer, you’ll be redirected to the directory if you double-click on a shortcut, it won’t pretend its part of the filesystem. You can still directly reference or open a file with the symlinked path, and it mostly works.
 
-SET current_path=%~dp0"sublime_text\"
+SET current_path=%~dp0sublime_text\
 for /d %%x in ("%APPDATA%\Sublime Text *") do (
 
-	SET link_path="%%x\Packages\User\"
+	SET link_path=%%x\Packages\User\
 
 	SET filename="Default (Windows).sublime-keymap"
-	if exist %link_path%!filename! ren %link_path%!filename! !filename!".bak"
-	mklink %link_path%!filename! %current_path%!filename!
+	if exist "!link_path!"!filename! ren "!link_path!"!filename! !filename!".bak"
+	mklink "!link_path!"!filename! "!current_path!"!filename!
 
 	SET filename="Package Control.sublime-settings"
-	if exist %link_path%!filename! ren %link_path%!filename! !filename!".bak"
-	mklink %link_path%!filename! %current_path%!filename!
+	if exist "!link_path!"!filename! ren "!link_path!"!filename! !filename!".bak"
+	mklink "!link_path!"!filename! "!current_path!"!filename!
 
 	SET filename="Preferences.sublime-settings"
-	if exist %link_path%!filename! ren %link_path%!filename! !filename!".bak"
-	mklink %link_path%!filename! %current_path%!filename!
-
+	if exist "!link_path!"!filename! ren "!link_path!"!filename! !filename!".bak"
+	mklink "!link_path!"!filename! "!current_path!"!filename!
+	
 )
