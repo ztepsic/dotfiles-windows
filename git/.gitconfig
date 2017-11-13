@@ -38,3 +38,10 @@
 [difftool]
     prompt = false
 	trustExitCode = false
+
+[pretty]
+    onelined = "%Cgreen%ad %C(yellow)%h %Creset%s"
+#   git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s'
+
+[alias]
+    log-oneline = log --pretty=onelined --date=short
