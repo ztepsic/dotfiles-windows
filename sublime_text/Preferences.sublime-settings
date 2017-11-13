@@ -1,30 +1,12 @@
 {
-	"font_size": 9,
-	
-	// The encoding to use when the encoding can't be determined automatically.
-    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.
 	"fallback_encoding": "Central European (Windows 1250)",
-
-	// Disables horizontal scrolling if enabled.
-    // May be set to true, false, or "auto", where it will be disabled for
-    // source code, and otherwise enabled.
-    "word_wrap": false,
-
-	// Display line endings in the status bar
-    "show_line_endings": true,
-
-    //
-    // User Interface Settings
-    //
-
-    // Display file encoding in the status bar
-    "show_encoding": true,
-
-    // Display line endings in the status bar
-    "show_line_endings": true
-
-    //
-    // Application Behavior Settings
-    //
-
+	"font_size": 9,
+	"ignored_packages":
+	[
+		"Package Control",
+		"Vintage"
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"word_wrap": false
 }
