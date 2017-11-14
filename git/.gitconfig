@@ -1,7 +1,7 @@
 # Local/private config goes in the include
 # Use separate file for username / github token / etc
 [include]
-	path = .gitconfig.local
+	path = ~/.gitconfig_local
 
 #[user]
 #	name = ** Put Your Name **
@@ -12,6 +12,8 @@
 	postBuffer = 52428800
 
 [core]
+    excludesfile = ~/.gitignore_global
+
 #	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 #	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -noPlugin
 
