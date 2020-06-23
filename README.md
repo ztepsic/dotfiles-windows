@@ -14,3 +14,11 @@ Usually looks like:
 ```
 C:\Users\{some_username}\AppData\Roaming\GHISLER
 ```
+
+## Microsoft.WindowsTerminal
+
+**Useful links**:
+* https://docs.microsoft.com/en-us/windows/terminal/
+* https://github.com/microsoft/terminal
+
+**Settings location:** `c:\Users\your_username\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\`
