@@ -40,9 +40,18 @@ c:\Users\your_username\AppData\Roaming\Code\User\settings.json
 ```
 
 ### Extensions
-| Name | Description
-| ------------- |:-------------:
-| -      | -
+
+- [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)
+
+**Extensions installation location:** `%USERPROFILE%\.vscode\extensions`
+Usually looks like:
+```
+c:\Users\your_username\.vscode\extensions\
+```
+
+| Name | Extension identifier | Description
+| :---: | :--- | :--- |
+| C# | ms-dotnettools.csharp | - |
 
 ---
 
