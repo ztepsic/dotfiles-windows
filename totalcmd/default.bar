@@ -1,5 +1,5 @@
 [Buttonbar]
-Buttoncount=28
+Buttoncount=29
 button1=wcmicons.dll
 cmd1=cm_Rereadsource
 iconic1=0
@@ -73,7 +73,12 @@ iconic26=0
 menu26=Notepad
 button27=C:\Program Files\Git\git-bash.exe
 cmd27=em_GitBash
+iconic27=0
 menu27=Git Bash
 button28=C:\Program Files\KDiff3\kdiff3.exe
 cmd28=em_kdiff3
+iconic28=0
 menu28=KDiff3
+button29=%LOCALAPPDATA%\Programs\Microsoft VS Code\Code.exe
+cmd29=em_vscode_open_folder
+menu29=Open folder in Visual Studio Code
