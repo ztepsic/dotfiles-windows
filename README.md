@@ -38,6 +38,8 @@ C:\Users\{some_username}\AppData\Roaming\GHISLER
 
 **Settings location:** `%APPDATA%\Code\User\settings.json`
 
+**MCP config location:** `%APPDATA%\Code\User\mcp.json`
+
 Usually looks like:
 
 ```
