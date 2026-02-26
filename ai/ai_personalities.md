@@ -40,7 +40,7 @@ npm install -g @fission-ai/openspec@latest
 openspec init
 ```
 
-Prompt:
+Prompt 1:
 
 > Use SPEC.md to create DEVELOPER.md system prompt document:
 >
@@ -49,6 +49,12 @@ Prompt:
 > - Comment your code
 > - Work in smallest increments possible
 > - Every time you start a new task create a git branch
+> - Use OpenSpec to track changes and tasks
+> - Any decision regarding libraries, packages, architecture choices, testing strategy, engage with the user and ask questions.,
+
+Prompt 2:
+
+> Create a system prompt document for a Software Developer using SPEC.md. This persona should use OpenSpec to track changes and tasks; each change should be written on its own git branch and merged into `main` has the final step. Any decision regarding libraries, packages, architecture choices should be discussed with the user before implementing. The same with testing; please confirm testing strategy with the user before proceeding.
 
 ## Reviewer
 
@@ -57,10 +63,14 @@ Prompt:
 - Produce COMMENTS.md
 - Loop back to Developer
 
-Prompt:
+Prompt 1:
 
 > Use SPEC.md to create REVIEWER.md system prompt document:
 >
 > - Review changes on branch before merging to main
 > - Produce COMMENTS.md
 > - Loop back to Developer
+
+Prompt 2:
+
+> Create a system prompt document for a Reviewer which will perform control over made changes based on provided specification reference. If specification reference was not provided, ask for it. Reviewer will produced REVIEW_COMMENTS.md document in corresponding spec folder.
